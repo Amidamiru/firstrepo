@@ -1,0 +1,500 @@
+    2  ls ~/demo/global/
+    3  mv ~/demo/global/ .
+    4  ls
+    5  cd global/
+    6  ls
+    7  echo f?
+    8  echo f??
+    9  echo f*
+   10  clear
+   11  ls
+   12  echo f[0-9][a-z]
+   13  echo "Hello welcome to USP"
+   14  clear
+   15  num=5
+   16  echo $num
+   17  echo "The price is: $num"
+   18  echo 'The price is: $num'
+   19  echo "The price is: $num"
+   20  echo "The price is: \$num"
+   21  echo \"The price is: \$num\"
+   22  echo 'The price is: $num'
+   23  echo \'The price is: $num\'
+   24  clear
+   25  echo $num
+   26  echo "$num"
+   27  echo \"$num\"
+   28  echo '$num'
+   29  echo \'$num\'
+   30  echo \'\$num\'
+   31  echo \$num
+   32  echo \\$num
+   33  clear
+   34  echo 2+3
+   35  echo $((2+3))
+   36  echo $(2+3)
+   37  echo $((2+3))
+   38  echo $num
+   39  echo $num+2
+   40  echo $(($num+2))
+   41  clear
+   42  echo $num*2+$num-1
+   43  echo $(($num*2))+$(($num-1))
+   44  echo $(($(($num*2))+$(($num-1))))
+   45  clear
+   46  ls
+   47  cd ..
+   48  ls
+   49  ls -l
+   50  touch output.txt file
+   51  ls
+   52  ls -l
+   53  clear
+   54  echo $num
+   55  unset num
+   56  echo $num
+   57  num=3
+   58  echo $num
+   59  unset num
+   60  echo $num
+   61  clear
+   62  ls ~/demo/
+   63  rm ~/demo/anotherfile 
+   64  ls
+   65  nano welcome.sh
+   66  ls
+   67  cat welcome.sh 
+   68  clear
+   69  ls
+   70  ./welcome.sh
+   71  ls -l
+   72  chmod u+x welcome.sh 
+   73  ls
+   74  ls -l
+   75  clear
+   76  ./welcome.sh 
+   77  nano welcome.sh 
+   78  ./welcome.sh 
+   79  nano welcome.sh 
+   80  ./welcome.sh 
+   81  nano welcome.sh 
+   82  clear
+   83  alias ll=`ls -l`
+   84  ls -l
+   85  ll
+   86  clear
+   87  alias ll=ls -l
+   88  alias ll='ls -l'
+   89  ll
+   90  ls -l
+   91  clear
+   92  unalias ll
+   93  ll
+   94  ls -l | wc -l
+   95  alias lc='ls -l | wc -l'
+   96  lc
+   97  cat welcome.sh;ls -l
+   98  clear
+   99  alias chain='cat welcome.sh;ls;wc welcome.sh'
+  100  chain
+  101  ls
+  102  history
+  103  clear
+  104  history > unix1.txt
+  105  ls
+  106  cat unix1.txt 
+  107  clear
+  108  ls
+  109  cd demo
+  110  ls
+  111  cd ..
+  112  mkdir day2
+  113  ls
+  114  cd day2
+  115  pwd
+  116  clear
+  117  vim test.txt
+  118  clear
+  119  ls
+  120  ls ~/
+  121  ls USP
+  122  ls ~/USP
+  123  cat ~/USP/json.py
+  124  cat ~/USP/json.pyc
+  125  rm ~/USP/json.pyc
+  126  rm ~/USP/f1
+  127  rm -r ~/USP/day5/
+  128  cd ~/USP/demo/
+  129  ls
+  130  cd ..
+  131  ls
+  132  rm -r demo/
+  133  ls
+  134  la -R
+  135  ls -R
+  136  cd ..
+  137  ls
+  138  rm day2
+  139  rm -r day2
+  140  ls
+  141  mv demo/ USP
+  142  ls
+  143  ls -R USP/
+  144  clear
+  145  cd /
+  146  ls
+  147  ls /etc/
+  148  cd 
+  149  pwd
+  150  clear
+  151  ls
+  152  ls USP
+  153  ls -R
+  154  clear
+  155  ls -r
+  156  ls -R
+  157  clear
+  158  man rm
+  159  man ls
+  160  ls
+  161  pwd
+  162  cd USP
+  163  pwd
+  164  ls USP
+  165  ls
+  166  ls demo
+  167  pwd
+  168  clear
+  169  pwd
+  170  cd
+  171  pwd
+  172  pwd
+  173  ls
+  174  cd USP/demo/
+  175  ls
+  176  cd usp1
+  177  pwd
+  178  cd
+  179  pwd
+  180  cd USP/demo/usp1/
+  181  clear
+  182  pwd
+  183  cd ~
+  184  pwd
+  185  cd /
+  186  pwd
+  187  ls
+  188  cd
+  189  pwd
+  190  cd /
+  191  clear
+  192  pwd
+  193  ls
+  194  cd ~/USP/demo/
+  195  pwd
+  196  cd
+  197  pwd
+  198  ls
+  199  mkdir day2
+  200  ls
+  201  cd day2
+  202  pwd
+  203  clear
+  204  mkdir sub1
+  205  ls
+  206  mkdir sub{2..6}
+  207  ls
+  208  ls
+  209  ls -l
+  210  clear
+  211  touch f1
+  212  ls -l
+  213  touch f2 f3
+  214  touch fa fa fa2 fa3 f2a f2a fAb fbA f22 f33 faa fbb
+  215  ls
+  216  cp f1 sub1
+  217  ls sub1
+  218  cp f[0-9] sub1
+  219  ls sub1
+  220  clear
+  221  cp f[0-9] sub1
+  222  ls
+  223  ls sub1
+  224  touch fb
+  225  ls
+  226  cp f[a-z] sub2
+  227  ls\
+  228  ls
+  229  ls sub2
+  230  clear
+  231  ls
+  232  cp f[0-9][0-9] sub3
+  233  ls sub3
+  234  cp f* sub6
+  235  ls sub6
+  236  cp f[a-z][a-z] sub4
+  237  ls sub4
+  238  cp f[a-zA-Z][a-zA-Z] sub5
+  239  ls sub5
+  240  mkdir sub7
+  241  clear
+  242  ls
+  243  cp f? sub7
+  244  ls sub7
+  245  mkdir sub8
+  246  cp f?? sub8
+  247  ls sub8
+  248  cp f[0-9a-zA-Z][0-9a-zA-Z] sub8
+  249  ls
+  250  rmdir sub1
+  251  clear
+  252  rm -r sub1
+  253  ls
+  254  rm -rf sub2
+  255  ls
+  256  rm -r sub?
+  257  ls
+  258  mkdir sub{1..5}
+  259  ls
+  260  mv f? sub1
+  261  ls
+  262  ls sub1
+  263  clear
+  264  ls
+  265  mv f[0-9]f0-9] sub2
+  266  mv f[0-9]f[0-9] sub2
+  267  mv f[0-9][0-9] sub2
+  268  ls
+  269  ls sub2
+  270  mv f?? sub3
+  271  ls
+  272  ls -R
+  273  clear
+  274  ls
+  275  rmdir sub5
+  276  ls
+  277  cd sub4
+  278  pwd
+  279  cp -R ~/day2/sub1 .
+  280  ;s
+  281  ls
+  282  mv ~/day2/sub2 .
+  283  ls
+  284  ls ~/day2/
+  285  clear
+  286  ls
+  287  ls -R
+  288  cp -R . ~/
+  289  ls ~/
+  290  mv . ~/
+  291  mv * ~/
+  292  ls
+  293  mv * ~/USP/
+  294  ls ~/USP/
+  295  clear
+  296  ls ~/USP/
+  297  rm -r ~/USP/sub[0-9]
+  298  ls ~/USP/
+  299  pwd
+  300  cd ..
+  301  ls
+  302  cd sub1
+  303  ls
+  304  cp * ~/day2/
+  305  cd ..
+  306  ls
+  307  cd sub3
+  308  ls
+  309  cp f?? ~/day2
+  310  ls ~/day2/sub4
+  311  ls ~/day2/sub1
+  312  ls ~/day2/sub2
+  313  cd ..
+  314  clear
+  315  ls -R
+  316  ls
+  317  mv sub4 sub2
+  318  ls
+  319  mv fa2 fa1
+  320  ls
+  321  mv fa3 fb1
+  322  ls
+  323  clear
+  324  echo f?
+  325  echo f[0-9]
+  326  echo f[a-z]
+  327  echo f??
+  328  ls -l
+  329  clear
+  330  ls -l
+  331  ls -l | head -3
+  332  ls -l | head -4
+  333  ls -l | tail -4
+  334  clear
+  335  ls -l
+  336  ls -l | grep 'sub'
+  337  history > day2.txt
+  338  cat day2.txt 
+  339  hash
+  340  ls 
+  341  vim demo.txt 
+  342  nano demo.txt 
+  343  hash
+  344  man hash
+  345  clear
+  346  ls
+  347  cksum demo.txt 
+  348  find . -name demo.txt 
+  349  find ~/ -name demo.txt 
+  350  find / -name passwd
+  351  find ~/ -type *.txt
+  352  find ~/ -name *txt
+  353  find ~/ -name *sh
+  354  clear
+  355  find ~/ -iname *sh
+  356  find ~/ -iname *sh -fprint filelist.txt
+  357  ls
+  358  cat filelist.txt 
+  359  clear
+  360  find ~/ -name filelist.txt -delete
+  361  ls
+  362  cat demo.txt 
+  363  ls
+  364  ls -l
+  365  clear
+  366  ls
+  367  rmdir day2/
+  368  rmdir -r day2/
+  369  rm -r day2/
+  370  ls
+  371  mkdir day3
+  372  ls
+  373  mv demo.txt day3
+  374  ls
+  375  ls day3
+  376  cd day3
+  377  pwd
+  378  clear
+  379  cat demo.txt 
+  380  nano demo.txt 
+  381  clear
+  382  cat demo.txt 
+  383  nano demo.txt 
+  384  clear
+  385  cat demo.txt 
+  386  nano demo.txt 
+  387  clear
+  388  cat demo.txt 
+  389  pwd
+  390  ls
+  391  cd day3/
+  392  ls 
+  393  clear
+  394  grep 'George' demo.txt 
+  395  grep -n 'George' demo.txt 
+  396  grep 'tutor' demo.txt 
+  397  grep -i 'tutor' demo.txt 
+  398  grep -in 'tutor' demo.txt 
+  399  grep -win 'tutor' demo.txt 
+  400  grep -wn 'tutor' demo.txt 
+  401  grep -win 'tutor' demo.txt 
+  402  clear
+  403  grep -in 'tutor' demo.txt 
+  404  grep -win 'tutor' demo.txt 
+  405  grep -in 'tutor\b' demo.txt 
+  406  grep -in '\btutor\b' demo.txt 
+  407  grep '[0-9]' demo.txt 
+  408  grep -n '[0-9]' demo.txt 
+  409  grep -n '[0-9]{3}' demo.txt 
+  410  grep -En '[0-9]{3}' demo.txt 
+  411  grep -En '[0-9]{3}\b' demo.txt 
+  412  grep -En '\b[0-9]{3}\b' demo.txt 
+  413  clear
+  414  grep -En '\b[0-9]{3}\b' demo.txt 
+  415  grep -En '\b[0-9]{3,4}\b' demo.txt 
+  416  grep -En '\b[0-9]{3,}\b' demo.txt 
+  417  grep -En '\b[0-9]{3,4}\b' demo.txt 
+  418  grep -n '\b[0-9]{3,4}\b' demo.txt 
+  419  grep -En '\b[0-9]{3,4}\b' demo.txt 
+  420  grep -Ewn '[0-9]{3}' demo.txt 
+  421  grep -Enw '[0-9]{3}' demo.txt 
+  422  grep -E -n -w '[0-9]{3}' demo.txt 
+  423  grep -En '[0-9]{3}' demo.txt 
+  424  clear
+  425  grep -En '[0-9]{3}' demo.txt 
+  426  grep -En '[0-9]{3}\b' demo.txt 
+  427  grep -En '\b[0-9]{3}\b' demo.txt 
+  428  grep -Ewn '[0-9]{3}' demo.txt 
+  429  clear
+  430  grep '$$' demo.txt 
+  431  grep -E '$$' demo.txt 
+  432  grep -E '\$$' demo.txt 
+  433  grep -E '\$' demo.txt 
+  434  clear
+  435  grep -E '\s$' demo.txt 
+  436  grep -En '\s$' demo.txt 
+  437  grep -E '\$' demo.txt 
+  438  grep -E '^\$' demo.txt 
+  439  grep -En '^\$' demo.txt 
+  440  clear
+  441  grep '^' demo.txt 
+  442  grep '^\^' demo.txt 
+  443  grep -n '^\^' demo.txt 
+  444  grep '^#' demo.txt 
+  445  clear
+  446  grep '^$' demo.txt 
+  447  grep -n '^$' demo.txt 
+  448  grep -v '^$' demo.txt 
+  449  grep -vn '^$' demo.txt 
+  450  clear
+  451  grep '#|[0-9]{3}' demo.txt 
+  452  grep -'#|[0-9]{3}' demo.txt 
+  453  grep -E '#|[0-9]{3}' demo.txt 
+  454  egrep '#|[0-9]{3}' demo.txt 
+  455  grep -E '#|[0-9]{3}' demo.txt 
+  456  clear
+  457  grep -E '#|[0-9]{3}' demo.txt 
+  458  grep -E '#.*[0-9]{3}' demo.txt 
+  459  grep '#' demo.txt | grep -E '[0-9]{3}'
+  460  grep -e '#' -e '[0-9]{3}' demo.txt 
+  461  grep -e '#' -Ee '[0-9]{3}' demo.txt 
+  462  grep -e '#' -Ee '\b[0-9]{3}\b' demo.txt 
+  463  grep -e '#' -Eew '[0-9]{3}' demo.txt 
+  464  grep -e '#' -Ee '\b[0-9]{3}\b' demo.txt 
+  465  clear
+  466  grep -e '#' -Ee '\b[0-9]{3}\b' demo.txt 
+  467  grep -E '#|[0-9]{3}' demo.txt 
+  468  grep -E '#.*[0-9]{3}' demo.txt 
+  469  grep -v '^$' demo.txt 
+  470  grep '^$' demo.txt 
+  471  grep -v '^$' demo.txt 
+  472  grep -v '^$' demo.txt > ouput.txt
+  473  ls
+  474  clear
+  475  ls
+  476  diff demo.txt ouput.txt 
+  477  clear
+  478  ls
+  479  ln ouput.txt hardlink
+  480  ls -l
+  481  cat hardlink 
+  482  cat ouput.txt 
+  483  clear
+  484  ln -s hardlink symboliclink
+  485  ls -l
+  486  ls -l
+  487  cat symboliclink 
+  488  rm hardlink 
+  489  clear
+  490  ls -l
+  491  cat symboliclink 
+  492  ln ouput.txt hardlink
+  493  ls -l
+  494  rm ouput.txt 
+  495  clear
+  496  cat hardlink 
+  497  ls -l
+  498  rm hardlink 
+  499  rm symboliclink 
+  500  ls -l
+  501  history > day3.txt

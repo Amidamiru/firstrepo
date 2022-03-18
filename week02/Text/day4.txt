@@ -1,0 +1,195 @@
+   11  clear
+   12  ls
+   13  mkdir day4
+   14  mv demo.txt day4
+   15  ls day4
+   16  cd day4
+   17  pwd
+   18  ls
+   19  clear
+   20  touch f{1..3}
+   21  touch f2a f2a fa2 fB2 faa f33
+   22  ls
+   23  mkdir sub{1..3}
+   24  ls
+   25  cp f[0-9] sub1
+   26  touch fa fb
+   27  ls
+   28  cp f? sub2
+   29  ls sub2
+   30  clear
+   31  ls
+   32  cp f[a-zA-Z][0-9] sub3
+   33  ls sub3
+   34  mkdir sub4
+   35  cp f?? sub4
+   36  ls sub4
+   37  mkdir sub5
+   38  mv f* sub5
+   39  ls sub5
+   40  ls
+   41  clear
+   42  ls
+   43  mkdir global
+   44  mv sub? global
+   45  ls
+   46  ls global/
+   47  clear
+   48  ls
+   49  ls -R global/
+   50  ls
+   51  cp -R . ~/
+   52  ls ~/
+   53  ls
+   54  rm demo.txt 
+   55  clear
+   56  rm -r global/
+   57  ls ~/
+   58  mv ~/global/ .
+   59  ls
+   60* mv ~/demo.txt ./global/
+   61  ls global/
+   62  cd /
+   63  pwds
+   64  pwd
+   65  ls
+   66  clear
+   67  cd ~/day4/global/
+   68  ls
+   69  rm -r sub?
+   70  ls
+   71  mv demo.txt ~/day4/
+   72  cd ..
+   73  ls
+   74  rmdir global/
+   75  clear
+   76  ls
+   77  cp demo.txt copy.txt
+   78  diff demo.txt copy.txt 
+   79  mv copy.txt out.txt
+   80  cat out.txt 
+   81  clear
+   82  cat *
+   83  clear
+   84  ls
+   85  ln out.txt handlink
+   86  ls
+   87  cat handlink 
+   88  ln -s handlink symbol.txt
+   89  ls -l
+   90  clear
+   91  cat symbol.txt 
+   92  ls
+   93  rm handlink 
+   94  cat symbol.txt 
+   95  ls -l
+   96  clear
+   97  ln out.txt hardlink
+   98  ls -l
+   99  touch f1
+  100  ls
+  101  ls -l
+  102  rm symbol.txt 
+  103  clear
+  104  ls 
+  105  grep 'tutor' demo.txt 
+  106  grep -wi 'tutor' demo.txt 
+  107  grep -i '\btutor\b' demo.txt 
+  108  grep -win 'tutor' demo.txt 
+  109  grep '^#' demo.txt 
+  110  grep '#' demo.txt 
+  111  clear
+  112  grep '^^' demo.txt 
+  113  grep '$$' demo.txt 
+  114  grep -E '$$' demo.txt 
+  115  grep -E '\$$' demo.txt 
+  116  grep -E '( )$' demo.txt 
+  117  clear
+  118  grep -E '\$$' demo.txt 
+  119  grep -E '( )$' demo.txt 
+  120  grep -E '\s$' demo.txt 
+  121  grep -E '\$$' demo.txt 
+  122  clear
+  123  grep '[0-9]{3}' demo.txt 
+  124  grep -E '[0-9]{3}' demo.txt 
+  125  grep -E '\b[0-9]{3}\b' demo.txt 
+  126  grep -Ew '[0-9]{3}' demo.txt 
+  127  grep '[#,:]' demo.txt 
+  128  clear
+  129  grep '[#,:]' demo.txt 
+  130  grep -E '#.*:' demo.txt 
+  131  grep -E '#.*:.*,' demo.txt 
+  132  grep -E '#|,|:' demo.txt 
+  133  clear
+  134  sed 's/python/Java/' demo.txt 
+  135  sed 's/python/Java/i' demo.txt 
+  136  clear
+  137  sed 's/\s/-/i' demo.txt 
+  138  sed 's/\s/-/gi' demo.txt 
+  139  clear
+  140  sed 's/[a-z]/\s/gi' demo.txt 
+  141  sed 's/[a-z]/( )/gi' demo.txt 
+  142  clear
+  143  sed 's/[a-z]/\( \)/gi' demo.txt 
+  144  sed 's/[a-z]/\s/gi' demo.txt 
+  145  clear
+  146  sed 's/[a-z]/ /gi' demo.txt 
+  147  sed 's/[0-9]/#/gi' demo.txt 
+  148  clear
+  149  s '5,$d' demo.txt 
+  150  sed '5,$d' demo.txt 
+  151  sed '6,10d' demo.txt 
+  152  sed '6,10 !d' demo.txt 
+  153  clear
+  154  sed '/Python/Id' demo.txt 
+  155  sed '/Python/I!d' demo.txt 
+  156  sed '/Note/I!d' demo.txt 
+  157  sed '/Note/Id' demo.txt 
+  158  clear
+  159  s '/^$/Id' demo.txt 
+  160  sed '/^$/Id' demo.txt 
+  161  sed '/^$/I!d' demo.txt 
+  162  clear
+  163  sed '4i\This is a new line' demo.txt 
+  164  sed '4c\THIS IS A NEW LINE' demo.txt 
+  165  CLEAR
+  166  sed '1,3p' demo.txt 
+  167  sed -n '1,3p' demo.txt 
+  168  sed -n '$p' demo.txt 
+  169  clear
+  170  sed '=' demo.txt 
+  171  clear
+  172  sed -n '1,3p' demo.txt 
+  173  sed 's/python/java/gi' demo.txt 
+  174  sed -n 's/python/java/gip' demo.txt 
+  175  clear
+  176  ls -l
+  177  cat demo.txt 
+  178  clear
+  179  ls -l | tail -n+2
+  180  ls -l | tail -n+2 > out.txt 
+  181  cat out.txt 
+  182  cut -d " " -f 2-6 demo.txt 
+  183  clear
+  184  cut -d " " -f 2-6 out.txt 
+  185  cat out.txt 
+  186  cut -d " " -f 3,4 out.txt 
+  187  cut -d " " -f 1-4 out.txt 
+  188  clear
+  189  cut -d " " -f 4-9 out.txt 
+  190  ls -l
+  191  cat out.txt 
+  192  clear
+  193  cut -d " " -f 4-9 out.txt 
+  194  cat demo.txt 
+  195  clear
+  196  cut -d " " -f 4-9 out.txt 
+  197  cat out.txt 
+  198  awk '{print $5 " " $10}' out.txt 
+  199  awk '{print $5 " " $9}' out.txt 
+  200  clear
+  201  cut -d " " -f 4-9 out.txt 
+  202  awk '{print $5 " " $9}' out.txt 
+  203  awk '{printf "%5d %10s \n", $5,$9}' out.txt 
+  204  awk '{printf "%5d %-10s \n", $5,$9}' out.txt 
+  205  history > day4.txt

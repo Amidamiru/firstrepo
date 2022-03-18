@@ -1,0 +1,231 @@
+    6  clear
+    7  ls
+    8  cd demo
+    9  ls
+   10  cd ..
+   11  mkdir day2
+   12  ls
+   13  cd day2
+   14  pwd
+   15  clear
+   16  vim test.txt
+   17  clear
+   18  ls
+   19  ls ~/
+   20  ls USP
+   21  ls ~/USP
+   22  cat ~/USP/json.py
+   23  cat ~/USP/json.pyc
+   24  rm ~/USP/json.pyc
+   25  rm ~/USP/f1
+   26  rm -r ~/USP/day5/
+   27  cd ~/USP/demo/
+   28  ls
+   29  cd ..
+   30  ls
+   31  rm -r demo/
+   32  ls
+   33  la -R
+   34  ls -R
+   35  cd ..
+   36  ls
+   37  rm day2
+   38  rm -r day2
+   39  ls
+   40  mv demo/ USP
+   41  ls
+   42  ls -R USP/
+   43  clear
+   44  cd /
+   45  ls
+   46  ls /etc/
+   47  cd 
+   48  pwd
+   49  clear
+   50  ls
+   51  ls USP
+   52  ls -R
+   53  clear
+   54  ls -r
+   55  ls -R
+   56  clear
+   57  man rm
+   58  man ls
+   59  ls
+   60  pwd
+   61  cd USP
+   62  pwd
+   63  ls USP
+   64  ls
+   65  ls demo
+   66  pwd
+   67  clear
+   68  pwd
+   69  cd
+   70  pwd
+   71  pwd
+   72  ls
+   73  cd USP/demo/
+   74  ls
+   75  cd usp1
+   76  pwd
+   77  cd
+   78  pwd
+   79  cd USP/demo/usp1/
+   80  clear
+   81  pwd
+   82  cd ~
+   83  pwd
+   84  cd /
+   85  pwd
+   86  ls
+   87  cd
+   88  pwd
+   89  cd /
+   90  clear
+   91  pwd
+   92  ls
+   93  cd ~/USP/demo/
+   94  pwd
+   95  cd
+   96  pwd
+   97  ls
+   98  mkdir day2
+   99  ls
+  100  cd day2
+  101  pwd
+  102  clear
+  103  mkdir sub1
+  104  ls
+  105  mkdir sub{2..6}
+  106  ls
+  107  ls
+  108  ls -l
+  109  clear
+  110  touch f1
+  111  ls -l
+  112  touch f2 f3
+  113  touch fa fa fa2 fa3 f2a f2a fAb fbA f22 f33 faa fbb
+  114  ls
+  115  cp f1 sub1
+  116  ls sub1
+  117  cp f[0-9] sub1
+  118  ls sub1
+  119  clear
+  120  cp f[0-9] sub1
+  121  ls
+  122  ls sub1
+  123  touch fb
+  124  ls
+  125  cp f[a-z] sub2
+  126  ls\
+  127  ls
+  128  ls sub2
+  129  clear
+  130  ls
+  131  cp f[0-9][0-9] sub3
+  132  ls sub3
+  133  cp f* sub6
+  134  ls sub6
+  135  cp f[a-z][a-z] sub4
+  136  ls sub4
+  137  cp f[a-zA-Z][a-zA-Z] sub5
+  138  ls sub5
+  139  mkdir sub7
+  140  clear
+  141  ls
+  142  cp f? sub7
+  143  ls sub7
+  144  mkdir sub8
+  145  cp f?? sub8
+  146  ls sub8
+  147  cp f[0-9a-zA-Z][0-9a-zA-Z] sub8
+  148  ls
+  149  rmdir sub1
+  150  clear
+  151  rm -r sub1
+  152  ls
+  153  rm -rf sub2
+  154  ls
+  155  rm -r sub?
+  156  ls
+  157  mkdir sub{1..5}
+  158  ls
+  159  mv f? sub1
+  160  ls
+  161  ls sub1
+  162  clear
+  163  ls
+  164  mv f[0-9]f0-9] sub2
+  165  mv f[0-9]f[0-9] sub2
+  166  mv f[0-9][0-9] sub2
+  167  ls
+  168  ls sub2
+  169  mv f?? sub3
+  170  ls
+  171  ls -R
+  172  clear
+  173  ls
+  174  rmdir sub5
+  175  ls
+  176  cd sub4
+  177  pwd
+  178  cp -R ~/day2/sub1 .
+  179  ;s
+  180  ls
+  181  mv ~/day2/sub2 .
+  182  ls
+  183  ls ~/day2/
+  184  clear
+  185  ls
+  186  ls -R
+  187  cp -R . ~/
+  188  ls ~/
+  189  mv . ~/
+  190  mv * ~/
+  191  ls
+  192  mv * ~/USP/
+  193  ls ~/USP/
+  194  clear
+  195  ls ~/USP/
+  196  rm -r ~/USP/sub[0-9]
+  197  ls ~/USP/
+  198  pwd
+  199  cd ..
+  200  ls
+  201  cd sub1
+  202  ls
+  203  cp * ~/day2/
+  204  cd ..
+  205  ls
+  206  cd sub3
+  207  ls
+  208  cp f?? ~/day2
+  209  ls ~/day2/sub4
+  210  ls ~/day2/sub1
+  211  ls ~/day2/sub2
+  212  cd ..
+  213  clear
+  214  ls -R
+  215  ls
+  216  mv sub4 sub2
+  217  ls
+  218  mv fa2 fa1
+  219  ls
+  220  mv fa3 fb1
+  221  ls
+  222  clear
+  223  echo f?
+  224  echo f[0-9]
+  225  echo f[a-z]
+  226  echo f??
+  227  ls -l
+  228  clear
+  229  ls -l
+  230  ls -l | head -3
+  231  ls -l | head -4
+  232  ls -l | tail -4
+  233  clear
+  234  ls -l
+  235  ls -l | grep 'sub'
+  236  history > day2.txt

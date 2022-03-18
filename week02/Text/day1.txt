@@ -1,0 +1,135 @@
+  
+  489  clear
+  490  echo hello
+  491  echo hello world
+  492  echo "Hello"
+  493  echo 'Hello'
+  494  echo "(whoami)"
+  495  echo '(whoami)'
+  496  var=8
+  497  echo $var
+  498  echo "$var"
+  499  echo '$var'
+  500  clear
+  501  history
+  502  clear
+  503  pwd
+  504  cd ..
+  505  cd ..
+  506  pwd
+  507  cd
+  508  clear
+  509  cd ..
+  510  mkdir demo
+  511  ls
+  512  pwd
+  513  cd
+  514  pwd
+  515  cd ..
+  516  ls
+  517  mv demo/ George/
+  518  clear
+  519  ls
+  520  cd George/
+  521  ls
+  522  rm log.txt 
+  523  rm week3
+  524  rm -rf week3
+  525  ls
+  526  clear
+  527  ls
+  528  cd demo
+  529  pwd
+  530  pwd
+  531  touch f1
+  532  ls
+  533  ls -l 
+  534  clear
+  535  touch f2
+  536  ls
+  537  touch f3 f4 f5 f6
+  538  ls
+  539  ls -l
+  540  ls -l > output.txt
+  541  ls
+  542  cat output.txt 
+  543  clear
+  544  cat output.txt 
+  545  ls -l > f1
+  546  cat f1
+  547  clear
+  548  cat f1
+  549  cat output.txt 
+  550  cat f1
+  551  clear
+  552  cat output.txt 
+  553  ls
+  554  ls >> output.txt 
+  555  cat output.txt 
+  556  ls > output.txt 
+  557  cat output.txt 
+  558  ls >> output.txt 
+  559  cat output.txt 
+  560  clear
+  561  ls -l 
+  562  ls -l > f2
+  563  cat f2
+  564  clear
+  565  cat 0<f1
+  566  cat 0<f1
+  567  ls -l
+  568  clear
+  569  ls -l 1>out.txt
+  570  cat out.txt 
+  571  clear
+  572  ls
+  573  man cat
+  574  clear
+  575  ls
+  576  chmod 000 out.txt 
+  577  clear
+  578  ls -l
+  579  cat out.txt 
+  580  ls 
+  581  ls -l
+  582  clear
+  583  cat out.txt 
+  584  cat out.txt 2> error.txt 
+  585  ls
+  586  cat error.txt 
+  587  cat *
+  588  clear
+  589  ls
+  590  rm error.txt 
+  591  ls
+  592  rm out.txt 
+  593  rm output.txt 
+  594  rm f2 
+  595  ls
+  596  clear
+  597  cat f1
+  598  rm f3
+  599  rm f4
+  600  rm f5
+  601  rm f6
+  602  clear
+  603  ls
+  604  cat f1
+  605  cat out.txt 
+  606  ls -l
+  607  clear
+  608  cat *
+  609  cat * 1>log.txt 2> error.txt
+  610  ls
+  611  cat log.txt 
+  612  cat error.txt 
+  613  clear
+  614  ls
+  615  cat error.txt 
+  616  cat log.txt 
+  617  ls -l errlog.txt
+  618  ls -l > errlog.txt
+  619  clear
+  620  cat errlog.txt 
+  621  history
+  622  history > day1.txt
