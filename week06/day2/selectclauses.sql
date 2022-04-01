@@ -1,4 +1,4 @@
-
+-- SELECT CLAUSES
 select ID, givenName, points, email
 from loyalty.customers
 where ID > 5
